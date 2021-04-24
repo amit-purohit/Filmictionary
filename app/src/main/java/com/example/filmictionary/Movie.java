@@ -6,13 +6,15 @@ public class Movie {
     private String mReleaseDate;
     private String mCast;
     private Double mImdbRatings;
+    private String mStoryLine;
 
-    public Movie(String title, String imageUrl, String releaseDate, String cast, Double imdbRatings){
+    public Movie(String title, String imageUrl, String releaseDate, String cast, Double imdbRatings, String storyLine){
         mTitle = title;
         mImageUrl = imageUrl;
         mReleaseDate = releaseDate;
         mCast = cast;
         mImdbRatings = imdbRatings;
+        mStoryLine = storyLine;
     }
 
     public String getmTitle() {
@@ -34,4 +36,6 @@ public class Movie {
     public Double getmImdbRatings() {
         return mImdbRatings;
     }
+
+    public String getmStoryLine(){return mStoryLine;}
 }

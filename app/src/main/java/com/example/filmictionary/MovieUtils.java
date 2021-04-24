@@ -18,7 +18,7 @@ public final class MovieUtils {
         ArrayList<Movie> movies = new ArrayList<Movie>();
 
         try{
-            JSONObject baseJsonResponse = new JSONObject(BollywoodJson.bollyjson);
+            JSONObject baseJsonResponse = new JSONObject(BollywoodJson.y);
             JSONArray movieArray = baseJsonResponse.getJSONArray("main");
 
             for(int i=0; i<movieArray.length(); i++){
@@ -27,12 +27,13 @@ public final class MovieUtils {
                 String imageUrl = currentMovie.getString("posterurl");
                 String releaseDate = currentMovie.getString("releaseDate");
                 Double imdbRatings = currentMovie.getDouble("imdbRating");
+                String storyLine = currentMovie.getString("storyline");
                 JSONArray castArray = currentMovie.getJSONArray("actors");
                 String cast="";
                 for(int j=0;j<castArray.length();j++){
-                    cast = cast + castArray.getString(j);
+                    cast += "-> " + castArray.getString(j) + "\n";
                 }
-                Movie movie = new Movie(title, imageUrl, releaseDate, cast, imdbRatings);
+                Movie movie = new Movie(title, imageUrl, releaseDate, cast, imdbRatings,storyLine);
                 movies.add(movie);
 
 

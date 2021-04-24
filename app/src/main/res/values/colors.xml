@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_500">#29E6D6</color>
+    <color name="purple_700">#087C6E</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <color name="rating1">#4A7BA7</color>
+
+    <!-- rating circle color for an earthquake with rating between 2 and 3 -->
+    <color name="rating2">#04B4B3</color>
+
+    <!-- rating circle color for an earthquake with rating between 3 and 4 -->
+    <color name="rating3">#10CAC9</color>
+
+    <!-- rating circle color for an earthquake with rating between 4 and 5 -->
+    <color name="rating4">#F5A623</color>
+
+    <!-- rating circle color for an earthquake with rating between 5 and 6 -->
+    <color name="rating5">#FF7D50</color>
+
+    <!-- rating circle color for an earthquake with rating between 6 and 7 -->
+    <color name="rating6">#FC6644</color>
+
+    <!-- rating circle color for an earthquake with rating between 7 and 8 -->
+    <color name="rating7">#E75F40</color>
+
+    <!-- rating circle color for an earthquake with rating between 8 and 9 -->
+    <color name="rating8">#E13A20</color>
+
+    <!-- rating circle color for an earthquake with rating between 9 and 10 -->
+    <color name="rating9">#D93218</color>
+
+    <!-- rating circle color for an earthquake with rating over 10 -->
+    <color name="rating10plus">#C03823</color>
+
+    <!-- Text color for the details of the earthquake in the list item -->
+    <color name="textColorEarthquakeDetails">#B4BAC0</color>
+
+    <!-- Text color for the primary location of the earthquake in the list item -->
+    <color name="textColorEarthquakeLocation">#2B3D4D</color>
 </resources>
